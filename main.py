@@ -39,6 +39,7 @@ data = {
 }
 try:
     print('进行登录...')
+    print(email)
     response = json.loads(session.post(url=login_url,headers=header,data=data).text)
     print(response['msg'])
     # 获取账号名称
